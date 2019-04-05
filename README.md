@@ -116,7 +116,10 @@ on song play analysis. This includes the following tables.
 
 1. **songplays** - records in log data associated with song plays, i.e., records with
   page `NextSong`
-    - *songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent*
+    - *songplay_id, start_time, user_id, level, song_id, artist_id, session_id,
+      location, user_agent*
+    
+A preview of the table
 
 <a id="dim"></a>
 
