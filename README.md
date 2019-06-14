@@ -33,7 +33,7 @@ They need a data engineer to create a **Postgres** database with tables designed
 to **optimize queries on song play analysis.** Our role is to create a **database
 schema** and **ETL pipeline** for this analysis. Then we'll test our database and ETL
 pipeline by running queries given by the analytics team from Sparkify and
-compare my results with their expected results.
+compare our results with their expected results.
 
 <a id="describe"></a>
 
