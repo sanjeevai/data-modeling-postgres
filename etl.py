@@ -83,6 +83,17 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    """
+    Process all the files in data directory and creates Postgres tables
+    Args:
+        - cur: Allows to run Postgres command
+        - conn: Connection to Postgres database
+        - filepath: File to be processed and extracted to Postgres tables
+        - func: Function to be allowed for ETL, can take two values
+            + process_song_data: when filepath is song_data, or
+            + process_log_data: when filepath is log_data
+    """
+    
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
@@ -102,10 +113,16 @@ def process_data(cur, conn, filepath, func):
 
 
 def main():
+    # connect to Postgress database
     conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
+    
+    # create a cursor to run SQL queries
     cur = conn.cursor()
-
+    
+    # process song_data directory
     process_data(cur, conn, filepath='data/song_data', func=process_song_file)
+    
+    # process log_data directory
     process_data(cur, conn, filepath='data/log_data', func=process_log_file)
 
     conn.close()
