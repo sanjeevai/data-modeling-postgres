@@ -94,7 +94,8 @@ def process_data(cur, conn, filepath, func):
             + process_song_data: when filepath is song_data, or
             + process_log_data: when filepath is log_data
     
-    Returns: None
+    Returns:
+    None
     """
     
     # get all files matching extension from directory
