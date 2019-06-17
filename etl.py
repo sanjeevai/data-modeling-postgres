@@ -85,6 +85,7 @@ def process_log_file(cur, filepath):
 def process_data(cur, conn, filepath, func):
     """
     Process all the files in data directory and creates Postgres tables
+    
     Args:
         - cur: Allows to run Postgres command
         - conn: Connection to Postgres database
@@ -92,6 +93,8 @@ def process_data(cur, conn, filepath, func):
         - func: Function to be allowed for ETL, can take two values
             + process_song_data: when filepath is song_data, or
             + process_log_data: when filepath is log_data
+    
+    Returns: None
     """
     
     # get all files matching extension from directory
