@@ -7,6 +7,16 @@ from sql_queries import *
 
 
 def process_song_file(cur, filepath):
+    """
+    Processes song file from song_data directory to create two tables: song_data and artist_data
+
+    Args:
+    - cur: Allows to run Postgres command
+    - filepath: File to be processed and extracted to Postgres tables
+    
+    Returns:
+    None
+    """
     # open song file
     df = pd.read_json(filepath, lines = True)
 
@@ -21,6 +31,15 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    """
+    Processes log file from log_data directory to create three tables: time, users, and songplays 
+    
+    Args:
+    - cur: Allows to run Postgres command
+    - filepath: File to be processed and extracted to Postgres tables
+    
+    Returns: None
+    """
     # open log file
     df = pd.read_json(filepath, lines = True)
 
