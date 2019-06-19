@@ -1,4 +1,4 @@
-# Data Engineering Nanodegree
+# Data Engineer Nanodegree
 
 ## Data Modeling
 
