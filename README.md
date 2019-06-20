@@ -265,16 +265,16 @@ for i, row in user_df.iterrows():
 
 <pre>
 .
-├── create_tables.py--------Drops and creates tables. Running this file resets
+├── create_tables.py------# Drops and creates tables. Running this file resets
 |                           the tables before each time we run ETL scripts.
-├── etl.ipynb---------------Reads and processes a single file from song_data and
+├── etl.ipynb-------------# Reads and processes a single file from song_data and
 |                           log_data and loads the data into our tables.
-├── etl.py------------------Reads and processes files from song_data and
+├── etl.py----------------# Reads and processes files from song_data and
 |                           log_data and loads them into our tables. We'll fill
 |                           this based on ETL notebook.
-├── sql_queries.py----------Contains all our SQL queries, and is imported into
+├── sql_queries.py--------# Contains all our SQL queries, and is imported into
 |                           the last three files above.
-└── test.ipynb--------------Displays the first few rows of each table to let us
+└── test.ipynb------------# Displays the first few rows of each table to let us
                             check our database.
 </pre>
 
