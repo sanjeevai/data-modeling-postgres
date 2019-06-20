@@ -19,6 +19,7 @@
 - [Process Song Data](#p_song)
 - [Process Log Data](#p_log)
 - [Files](#files)
+- [Software Requirements](#sw_reqs)
 - [Conclusion](#conclusion)
 
 ***
@@ -277,6 +278,12 @@ for i, row in user_df.iterrows():
 └── test.ipynb------------# Displays the first few rows of each table to let us
                             check our database.
 </pre>
+
+<a id="sw_reqs"></a>
+
+## Software Requirements
+
+This project requires Python 3.6.x and the necessary libraries are mentioned in _requirements.txt._
 
 <a id="conclusion"></a>
 
