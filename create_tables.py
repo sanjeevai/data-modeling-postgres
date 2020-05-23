@@ -2,7 +2,7 @@ import psycopg2
 from sql_queries import create_table_queries, drop_table_queries
 
 
-def create_database():
+def create_database()://just editing and adding comment
     """
     Return cursor and connection to new Sparkify database
     """
